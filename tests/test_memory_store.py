@@ -29,7 +29,7 @@ class TestMemoryStoreBasic:
     def test_store_memory(self, store, active_session):
         mem = Memory(
             tier=MemoryTier.SHORT,
-            content_vector=make_random_vector(384, seed=1),
+            content_vector=make_random_vector(768, seed=1),
             importance=0.8,
             text_summary="User asked about Q3 earnings",
         )
@@ -42,14 +42,14 @@ class TestMemoryStoreBasic:
         for i in range(5):
             store.store_memory(sid, Memory(
                 tier=MemoryTier.SHORT,
-                content_vector=make_random_vector(384, seed=i),
+                content_vector=make_random_vector(768, seed=i),
                 importance=0.1 * (i + 1),
                 text_summary=f"Memory {i}",
             ))
         for i in range(3):
             store.store_memory(sid, Memory(
                 tier=MemoryTier.MEDIUM,
-                content_vector=make_random_vector(384, seed=100 + i),
+                content_vector=make_random_vector(768, seed=100 + i),
                 importance=0.5,
                 text_summary=f"Medium memory {i}",
             ))
@@ -65,7 +65,7 @@ class TestMemoryStoreBasic:
         for i, imp in enumerate(importances):
             store.store_memory(sid, Memory(
                 tier=MemoryTier.SHORT,
-                content_vector=make_random_vector(384, seed=i),
+                content_vector=make_random_vector(768, seed=i),
                 importance=imp,
                 text_summary=f"Memory imp={imp}",
             ))
@@ -80,7 +80,7 @@ class TestMemoryPromote:
         sid = active_session.session_id
         mem = Memory(
             tier=MemoryTier.SHORT,
-            content_vector=make_random_vector(384, seed=1),
+            content_vector=make_random_vector(768, seed=1),
             importance=0.8,
             text_summary="Important memory",
         )
@@ -101,7 +101,7 @@ class TestMemoryAccess:
         sid = active_session.session_id
         mem = Memory(
             tier=MemoryTier.SHORT,
-            content_vector=make_random_vector(384, seed=1),
+            content_vector=make_random_vector(768, seed=1),
             importance=0.5,
             text_summary="Accessed memory",
         )
@@ -119,9 +119,9 @@ class TestMemoryAccess:
 class TestMemoryCount:
     def test_count_all(self, store, active_session):
         sid = active_session.session_id
-        store.store_memory(sid, Memory(tier=MemoryTier.SHORT, content_vector=make_random_vector(384, seed=1), importance=0.5))
-        store.store_memory(sid, Memory(tier=MemoryTier.SHORT, content_vector=make_random_vector(384, seed=2), importance=0.5))
-        store.store_memory(sid, Memory(tier=MemoryTier.MEDIUM, content_vector=make_random_vector(384, seed=3), importance=0.5))
+        store.store_memory(sid, Memory(tier=MemoryTier.SHORT, content_vector=make_random_vector(768, seed=1), importance=0.5))
+        store.store_memory(sid, Memory(tier=MemoryTier.SHORT, content_vector=make_random_vector(768, seed=2), importance=0.5))
+        store.store_memory(sid, Memory(tier=MemoryTier.MEDIUM, content_vector=make_random_vector(768, seed=3), importance=0.5))
 
         assert store.count_memories(sid) == 3
         assert store.count_memories(sid, MemoryTier.SHORT) == 2
@@ -132,7 +132,7 @@ class TestMemoryCount:
 class TestMemoryDelete:
     def test_delete_memory(self, store, active_session):
         sid = active_session.session_id
-        mem = Memory(tier=MemoryTier.SHORT, content_vector=make_random_vector(384, seed=1), importance=0.5)
+        mem = Memory(tier=MemoryTier.SHORT, content_vector=make_random_vector(768, seed=1), importance=0.5)
         store.store_memory(sid, mem)
         assert store.count_memories(sid) == 1
 
@@ -151,13 +151,13 @@ class TestMemoryVectorSearch:
         for i in range(5):
             store.store_memory(sid, Memory(
                 tier=MemoryTier.SHORT,
-                content_vector=make_random_vector(384, seed=i),
+                content_vector=make_random_vector(768, seed=i),
                 importance=0.5,
                 text_summary=f"Memory {i}",
             ))
 
         # Search with a vector similar to seed=0
-        query_vec = make_random_vector(384, seed=0)
+        query_vec = make_random_vector(768, seed=0)
         results = store.search_similar_memories(sid, query_vec, limit=3)
         assert len(results) > 0
         # First result should be exact match (seed=0)
@@ -169,17 +169,17 @@ class TestMemoryVectorSearch:
         sid = active_session.session_id
         store.store_memory(sid, Memory(
             tier=MemoryTier.SHORT,
-            content_vector=make_random_vector(384, seed=1),
+            content_vector=make_random_vector(768, seed=1),
             importance=0.5, text_summary="Short mem",
         ))
         store.store_memory(sid, Memory(
             tier=MemoryTier.LONG,
-            content_vector=make_random_vector(384, seed=1),  # Same vector
+            content_vector=make_random_vector(768, seed=1),  # Same vector
             importance=0.5, text_summary="Long mem",
         ))
 
         results = store.search_similar_memories(
-            sid, make_random_vector(384, seed=1), limit=5, tier=MemoryTier.LONG
+            sid, make_random_vector(768, seed=1), limit=5, tier=MemoryTier.LONG
         )
         assert len(results) == 1
         assert results[0][0].text_summary == "Long mem"

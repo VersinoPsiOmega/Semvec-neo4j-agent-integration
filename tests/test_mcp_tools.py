@@ -139,10 +139,10 @@ class TestMemoryTools:
             session_id=sid,
             text="Patient has chronic heart failure",
             importance=0.9,
-            vector=make_random_vector(384, seed=42),
+            vector=make_random_vector(768, seed=42),
         )
 
-        result = mcp.memory_query(sid, query_vector=make_random_vector(384, seed=42), limit=5)
+        result = mcp.memory_query(sid, query_vector=make_random_vector(768, seed=42), limit=5)
         assert len(result) >= 1
         assert result[0]["text"] == "Patient has chronic heart failure"
 
@@ -152,7 +152,7 @@ class TestMemoryTools:
 
         for i in range(5):
             mcp.store_memory(sid, f"Memory {i}", importance=0.1 * (i + 1),
-                             vector=make_random_vector(384, seed=i + 10))
+                             vector=make_random_vector(768, seed=i + 10))
 
         result = mcp.memory_consolidate(session_id=sid)
         assert "short" in result
