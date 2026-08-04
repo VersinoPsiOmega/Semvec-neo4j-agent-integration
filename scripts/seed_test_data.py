@@ -140,7 +140,7 @@ def seed_agent_sessions(driver):
     """Create agent sessions using the local Semvec runtime for drift detection."""
     print("\n=== Seeding Agent Sessions (local Semvec runtime) ===")
 
-    semvec = SemvecClient(embedder=SentenceTransformerEmbedder())
+    semvec = SemvecClient(embedder=SentenceTransformerEmbedder(), owner_subject="local-demo")
     health = semvec.health()
     print(f"  Semvec runtime: {health.get('status', 'unknown')} "
           f"(v{health.get('version', '?')}, {health.get('active_sessions', '?')} active sessions)")

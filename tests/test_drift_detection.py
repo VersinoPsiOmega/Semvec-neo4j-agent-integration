@@ -19,7 +19,7 @@ from src.persistence.neo4j_drift_event_store import Neo4jDriftEventStore
 
 @pytest.fixture(scope="session")
 def semvec_client():
-    return SemvecClient(embedder=HashEmbedder(dimension=32))
+    return SemvecClient(embedder=HashEmbedder(dimension=32), owner_subject="test-suite")
 
 
 @pytest.fixture

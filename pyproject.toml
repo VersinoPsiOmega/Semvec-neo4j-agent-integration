@@ -8,7 +8,7 @@ version = "0.2.0"
 description = "Semvec × Neo4j integration — drift detection, multi-agent clusters, regions/observer, and the INVESTIGATED bridge into a healthcare knowledge graph"
 requires-python = ">=3.10"
 dependencies = [
-    "semvec>=0.5",
+    "semvec>=0.8.7",
     "neo4j>=5.11",
     "numpy>=1.24",
     "sentence-transformers>=2.2",

@@ -31,7 +31,7 @@ def _pseudo_embed(text: str, dim: int = SAFETY_DIM) -> list[float]:
 
 @pytest.fixture(scope="module")
 def semvec():
-    return SemvecClient(embedder=HashEmbedder(dimension=SAFETY_DIM))
+    return SemvecClient(embedder=HashEmbedder(dimension=SAFETY_DIM), owner_subject="test-suite")
 
 
 @pytest.fixture

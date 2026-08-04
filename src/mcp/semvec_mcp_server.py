@@ -44,7 +44,13 @@ class SemvecMCPServer:
     ):
         self._driver = driver
         self._database = database
-        self._semvec = semvec_client or SemvecClient()
+        if semvec_client is None:
+            raise TypeError(
+                "semvec_client is required: semvec >= 0.8.7 ties every session "
+                "and network partition to a license subject, so the caller must "
+                "construct SemvecClient(owner_subject=...) explicitly"
+            )
+        self._semvec = semvec_client
 
         self._sessions = Neo4jSessionStore(driver, database)
         self._states = Neo4jStateStore(driver, database)

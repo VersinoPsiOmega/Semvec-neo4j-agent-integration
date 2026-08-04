@@ -16,7 +16,7 @@ from src.core.semvec_client import SemvecClient
 
 @pytest.fixture(scope="module")
 def semvec():
-    return SemvecClient(embedder=HashEmbedder(dimension=32))
+    return SemvecClient(embedder=HashEmbedder(dimension=32), owner_subject="test-suite")
 
 
 @pytest.fixture

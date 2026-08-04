@@ -42,7 +42,7 @@ def _build_semvec_client() -> SemvecClient:
     """Single factory so all scenarios share one embedder model load."""
     global _SHARED_SEMVEC
     if _SHARED_SEMVEC is None:
-        _SHARED_SEMVEC = SemvecClient(embedder=SentenceTransformerEmbedder())
+        _SHARED_SEMVEC = SemvecClient(embedder=SentenceTransformerEmbedder(), owner_subject="local-demo")
     return _SHARED_SEMVEC
 from src.persistence.adapter import Neo4jSemvecAdapter
 from scripts.demo_helpers import format_observer_sample, sim_bar

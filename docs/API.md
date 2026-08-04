@@ -11,13 +11,25 @@ For the full Semvec runtime documentation see
 from src.core.embedder import SentenceTransformerEmbedder
 from src.core.semvec_client import SemvecClient
 
-semvec = SemvecClient(embedder=SentenceTransformerEmbedder())
+semvec = SemvecClient(
+    embedder=SentenceTransformerEmbedder(),
+    owner_subject="my-license-subject",
+)
 ```
 
 When `embedder` is omitted, Semvec lazily loads
 `sentence-transformers` with the default 384-dimensional MiniLM model.
 For tests and offline runs, swap in `HashEmbedder(dimension=…)` from
 `src.core.embedder`.
+
+`owner_subject` is required since semvec 0.8.7: it is the license
+subject that owns every session, observer, and network partition the
+client creates, and session ownership is checked against it on
+observer and network operations. It is keyword-only and has no
+default — a forgotten argument fails with a `TypeError` instead of
+silently creating a permissive anonymous client. Pass `None`
+explicitly to opt into anonymous/unowned mode (user partitions such
+as `switch_user` refuse `None` at call time).
 
 ---
 
@@ -38,7 +50,7 @@ For tests and offline runs, swap in `HashEmbedder(dimension=…)` from
 
 | Method | Returns |
 |---|---|
-| `create_session(dimension, model_name, use_meta_pss=False, enable_topic_switch=True)` | `{session_id, created}` |
+| `create_session(dimension, model_name, use_cortex=False, enable_topic_switch=True)` | `{session_id, created}` |
 | `export_session(session_id)` | `{session_id, state_dict, checksum}` |
 | `import_session(session_id, state_dict)` | `{session_id, imported}` |
 | `add_anchor(session_id, embedding)` | `{session_id, anchor_count}` |
@@ -101,7 +113,10 @@ For tests and offline runs, swap in `HashEmbedder(dimension=…)` from
 from src.core.embedder import SentenceTransformerEmbedder
 from src.core.semvec_client import SemvecClient
 
-semvec = SemvecClient(embedder=SentenceTransformerEmbedder())
+semvec = SemvecClient(
+    embedder=SentenceTransformerEmbedder(),
+    owner_subject="my-license-subject",
+)
 
 turn1 = semvec.run("Patient with chest pain, ECG shows ST elevation")
 sid = turn1["session_id"]

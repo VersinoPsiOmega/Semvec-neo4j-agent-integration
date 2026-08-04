@@ -23,7 +23,7 @@ def clean_test_data():
 
 @pytest.fixture
 def client():
-    return SemvecClient(embedder=HashEmbedder(dimension=16))
+    return SemvecClient(embedder=HashEmbedder(dimension=16), owner_subject="test-suite")
 
 
 # ---------------------------------------------------------------------------

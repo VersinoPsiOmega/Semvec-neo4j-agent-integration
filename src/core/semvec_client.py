@@ -49,14 +49,21 @@ class _DimensionedSessionManager(SessionManager):
     defaults derived from the embedder so every session lines up.
     """
 
-    def __init__(self, default_dimension: int = 768, default_model: str = "all-mpnet-base-v2") -> None:
+    def __init__(
+        self,
+        default_dimension: int = 768,
+        default_model: str = "all-mpnet-base-v2",
+        default_owner_subject: str | None = None,
+    ) -> None:
         super().__init__()
         self._default_dim = int(default_dimension)
         self._default_model = default_model
+        self._default_owner_subject = default_owner_subject
 
     def create_session(self, *args, **kwargs):  # type: ignore[override]
         kwargs.setdefault("dimension", self._default_dim)
         kwargs.setdefault("model_name", self._default_model)
+        kwargs.setdefault("owner_subject", self._default_owner_subject)
         return super().create_session(*args, **kwargs)
 
 
@@ -78,6 +85,14 @@ class SemvecClient:
         provided embedder. Ignored if ``embedder`` is supplied.
     model_name:
         Sentence-transformer model name advertised in session metadata.
+    owner_subject:
+        License subject that owns every session, observer, and network
+        partition created through this client (Semvec >= 0.8.7 checks
+        session ownership against it). Keyword-only and deliberately
+        without a default, mirroring Semvec's own API: forgetting it is a
+        ``TypeError`` at construction instead of a silently permissive
+        anonymous client. Pass ``None`` explicitly to opt into the
+        anonymous/unowned mode.
     """
 
     def __init__(
@@ -85,16 +100,20 @@ class SemvecClient:
         embedder: Any = None,
         dimension: int = 768,
         model_name: str = "all-mpnet-base-v2",
+        *,
+        owner_subject: str | None,
     ) -> None:
         if embedder is not None:
             self._dimension = int(embedder.get_dimension())
         else:
             self._dimension = int(dimension)
         self._model_name = model_name
+        self._owner_subject = owner_subject
 
         self._sessions = _DimensionedSessionManager(
             default_dimension=self._dimension,
             default_model=self._model_name,
+            default_owner_subject=owner_subject,
         )
         if embedder is not None:
             self._sessions.inject_embedder(embedder)
@@ -186,13 +205,13 @@ class SemvecClient:
         self,
         dimension: Optional[int] = None,
         model_name: Optional[str] = None,
-        use_meta_pss: bool = False,
+        use_cortex: bool = False,
         enable_topic_switch: bool = True,
     ) -> dict:
         sid = self._sessions.create_session(
             dimension=dimension or self._dimension,
             model_name=model_name or self._model_name,
-            use_meta_pss=use_meta_pss,
+            use_cortex=use_cortex,
             enable_topic_switch=enable_topic_switch,
         )
         return {"session_id": sid, "created": True}
@@ -773,6 +792,7 @@ class SemvecClient:
             self._observer = GlobalObserver(
                 cluster_manager=self._clusters,
                 regional_manager=self._regions,
+                owner_subject=self._owner_subject,
                 session_manager=self._sessions,
                 sample_interval_seconds=sample_interval_seconds,
             )
@@ -824,28 +844,42 @@ class SemvecClient:
         max_weight: float = 0.15,
     ) -> dict:
         result = self._network.transfer_delta(
-            source_session_id, target_session_id, max_weight=max_weight
+            source_session_id,
+            target_session_id,
+            self._owner_subject,
+            max_weight=max_weight,
         )
         if result is None:
             raise ValueError("Source or target session not found")
         return result
 
     def switch_user(self, user_id: str) -> dict:
-        return self._network.switch_user(user_id)
+        result = self._network.switch_user(user_id, self._owner_subject)
+        if result is None:
+            raise ValueError(
+                f"User partition for {user_id!r} exists but is owned by another subject"
+            )
+        return result
 
     def get_active_user(self) -> dict:
-        return {"active_user": self._network.get_active_user()}
+        return {
+            "active_user": self._network.get_active_user(
+                owner_subject=self._owner_subject
+            )
+        }
 
     def propose_consensus(
         self, proposer_session_id: str, target_embedding: list[float]
     ) -> dict:
-        result = self._network.propose_consensus(proposer_session_id, target_embedding)
+        result = self._network.propose_consensus(
+            proposer_session_id, target_embedding, self._owner_subject
+        )
         if result is None:
             raise ValueError(f"Proposer session not found: {proposer_session_id}")
         return result
 
     def get_trust_scores(self) -> dict:
-        return {"trust_scores": self._network.get_trust_scores()}
+        return {"trust_scores": self._network.get_trust_scores(self._owner_subject)}
 
     # ------------------------------------------------------------------
     # Internal — drift event publication mirrors REST orchestration.
