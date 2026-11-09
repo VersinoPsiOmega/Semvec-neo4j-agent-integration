@@ -1,0 +1,15 @@
+# ABOUTME: Keeps local state, secrets and caches out of the Docker build context.
+# ABOUTME: .env is passed to the containers at runtime by docker-compose, never baked into the image.
+
+.env
+.env.*
+!.env.example
+.venv/
+.git/
+.claude/
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/

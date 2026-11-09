@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=77.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semvec_neo4j"
+version = "0.2.0"
+description = "Semvec × Neo4j integration — drift detection, multi-agent clusters, regions/observer, and the INVESTIGATED bridge into a healthcare knowledge graph"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Michael Neuberger" }]
+keywords = ["semvec", "neo4j", "knowledge-graph", "drift-detection", "multi-agent", "semantic-memory"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Database",
+]
+dependencies = [
+    "semvec[api]>=0.8.9",
+    "neo4j>=5.11",
+    "numpy>=1.24",
+    "sentence-transformers>=2.2",
+    "openai>=1.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-asyncio>=0.21",
+    "pytest-cov>=4.1",
+    "testcontainers[neo4j]>=3.7",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+markers = [
+    "integration: marks tests requiring a running Neo4j instance",
+    "e2e: marks end-to-end tests",
+]
+
+[tool.coverage.run]
+source = ["semvec_neo4j"]
+omit = ["tests/*", "benchmarks/*"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true

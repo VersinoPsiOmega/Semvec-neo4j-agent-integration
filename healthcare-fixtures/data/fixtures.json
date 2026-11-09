@@ -1,0 +1,1750 @@
+{
+  "domain": "healthcare",
+  "entities": {
+    "Person": [
+      {
+        "name": "Dr. Sarah Chen",
+        "email": "dr..chen@company.org",
+        "role": "Attending Physician",
+        "description": "Dr. Sarah Chen, attending physician specializing in healthcare."
+      },
+      {
+        "name": "Nurse James Morrison",
+        "email": "nurse.morrison@company.org",
+        "role": "Charge Nurse",
+        "description": "Charge Nurse Nurse James Morrison \u2014 active in the healthcare sector with relevant domain expertise."
+      },
+      {
+        "name": "Dr. Maria Rodriguez",
+        "email": "dr..rodriguez@example.com",
+        "role": "Resident",
+        "description": "Dr. Maria Rodriguez serves as resident, contributing to healthcare initiatives and operations."
+      },
+      {
+        "name": "Dr. David Park",
+        "email": "dr..park@example.com",
+        "role": "Pharmacist",
+        "description": "Dr. David Park, pharmacist specializing in healthcare."
+      },
+      {
+        "name": "Nurse Elena Volkov",
+        "email": "nurse.volkov@corp.net",
+        "role": "Lab Technician",
+        "description": "Lab Technician Nurse Elena Volkov \u2014 active in the healthcare sector with relevant domain expertise."
+      }
+    ],
+    "Organization": [
+      {
+        "name": "Metropolitan General Hospital",
+        "description": "Metropolitan General Hospital is a hospital systems organization operating in the healthcare space.",
+        "industry": "Hospital Systems"
+      },
+      {
+        "name": "Sunrise Medical Center",
+        "description": "Medical Devices entity Sunrise Medical Center, providing services and resources for healthcare operations.",
+        "industry": "Medical Devices"
+      },
+      {
+        "name": "Valley Health Network",
+        "description": "Valley Health Network \u2014 a pharmaceuticals institution active in healthcare.",
+        "industry": "Pharmaceuticals"
+      },
+      {
+        "name": "Pacific Medical Group",
+        "description": "Pacific Medical Group is a health insurance organization operating in the healthcare space.",
+        "industry": "Health Insurance"
+      },
+      {
+        "name": "Community Care Alliance",
+        "description": "Clinical Research entity Community Care Alliance, providing services and resources for healthcare operations.",
+        "industry": "Clinical Research"
+      }
+    ],
+    "Location": [
+      {
+        "name": "Main Hospital Campus",
+        "address": "456 Oak Avenue, Seattle, WA 98101",
+        "latitude": 31.69,
+        "longitude": -118.97
+      },
+      {
+        "name": "East Wing ICU",
+        "address": "789 Pine Boulevard, Miami, FL 33101",
+        "latitude": 41.42,
+        "longitude": -100.36
+      },
+      {
+        "name": "Outpatient Clinic B",
+        "address": "147 Birch Road, Atlanta, GA 30301",
+        "latitude": 38.03,
+        "longitude": -118.19
+      },
+      {
+        "name": "Emergency Department",
+        "address": "741 Chestnut Terrace, San Francisco, CA 94105",
+        "latitude": 33.67,
+        "longitude": -110.99
+      },
+      {
+        "name": "Radiology Suite",
+        "address": "987 Elm Court, New York, NY 10001",
+        "latitude": 38.98,
+        "longitude": -112.8
+      }
+    ],
+    "Event": [
+      {
+        "name": "Grand Rounds Lecture",
+        "date": "2024-03-25T17:45:00",
+        "description": "Grand Rounds Lecture, a event event recorded in the healthcare timeline."
+      },
+      {
+        "name": "Emergency Code Blue Drill",
+        "date": "2026-05-15T16:30:00",
+        "description": "Event Emergency Code Blue Drill \u2014 occurred as part of healthcare activities."
+      },
+      {
+        "name": "Pharmacy & Therapeutics Committee",
+        "date": "2026-06-05T10:00:00",
+        "description": "Recorded event: Pharmacy & Therapeutics Committee, relevant to healthcare workflows."
+      },
+      {
+        "name": "Infection Control Audit",
+        "date": "2025-12-26T10:30:00",
+        "description": "Infection Control Audit, a event event recorded in the healthcare timeline."
+      },
+      {
+        "name": "Morbidity & Mortality Conference",
+        "date": "2024-02-18T15:15:00",
+        "description": "Event Morbidity & Mortality Conference \u2014 occurred as part of healthcare activities."
+      }
+    ],
+    "Object": [
+      {
+        "name": "Patient Care Protocol",
+        "description": "Patient Care Protocol, a object used in healthcare workflows."
+      },
+      {
+        "name": "Clinical Trial Report",
+        "description": "Object Clinical Trial Report \u2014 cataloged for healthcare operations."
+      },
+      {
+        "name": "Medication Reconciliation Form",
+        "description": "Medication Reconciliation Form is a object supporting healthcare processes."
+      },
+      {
+        "name": "Discharge Planning Checklist",
+        "description": "Discharge Planning Checklist, a object used in healthcare workflows."
+      },
+      {
+        "name": "Lab Results Summary",
+        "description": "Object Lab Results Summary \u2014 cataloged for healthcare operations."
+      }
+    ],
+    "Patient": [
+      {
+        "name": "James Morrison",
+        "patient_id": "PAT-2026-0000",
+        "date_of_birth": "2025-08-04",
+        "blood_type": "A+",
+        "allergies": "Penicillin"
+      },
+      {
+        "name": "Maria Rodriguez",
+        "patient_id": "PAT-2026-0001",
+        "date_of_birth": "2025-05-07",
+        "blood_type": "A-",
+        "allergies": "Sulfa drugs"
+      },
+      {
+        "name": "David Park",
+        "patient_id": "PAT-2026-0002",
+        "date_of_birth": "2026-06-23",
+        "blood_type": "B+",
+        "allergies": "Latex"
+      },
+      {
+        "name": "Aisha Patel",
+        "patient_id": "PAT-2024-0003",
+        "date_of_birth": "2026-02-22",
+        "blood_type": "B-",
+        "allergies": "Shellfish"
+      },
+      {
+        "name": "Carlos Gutierrez",
+        "patient_id": "PAT-2026-0004",
+        "date_of_birth": "2024-09-28",
+        "blood_type": "AB+",
+        "allergies": "Aspirin"
+      }
+    ],
+    "Provider": [
+      {
+        "name": "Dr. Sarah Chen",
+        "provider_id": "PRV-2025-0000",
+        "specialty": "general_practice",
+        "license_number": "PRV-2024-0000"
+      },
+      {
+        "name": "Dr. Michael O'Brien",
+        "provider_id": "PRV-2024-0001",
+        "specialty": "cardiology",
+        "license_number": "PRV-2024-0001"
+      },
+      {
+        "name": "Dr. Elena Volkov",
+        "provider_id": "PRV-2026-0002",
+        "specialty": "oncology",
+        "license_number": "PRV-2025-0002"
+      },
+      {
+        "name": "Dr. Yuki Tanaka",
+        "provider_id": "PRV-2025-0003",
+        "specialty": "neurology",
+        "license_number": "PRV-2024-0003"
+      },
+      {
+        "name": "Dr. Rachel Okonkwo",
+        "provider_id": "PRV-2026-0004",
+        "specialty": "orthopedics",
+        "license_number": "PRV-2026-0004"
+      }
+    ],
+    "Diagnosis": [
+      {
+        "name": "Type 2 Diabetes Mellitus",
+        "icd_code": "DX-2026-0000",
+        "category": "chronic",
+        "severity": "mild"
+      },
+      {
+        "name": "Essential Hypertension",
+        "icd_code": "DX-2024-0001",
+        "category": "acute",
+        "severity": "moderate"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "icd_code": "DX-2026-0002",
+        "category": "infectious",
+        "severity": "severe"
+      },
+      {
+        "name": "Major Depressive Disorder",
+        "icd_code": "DX-2026-0003",
+        "category": "autoimmune",
+        "severity": "critical"
+      },
+      {
+        "name": "Chronic Obstructive Pulmonary Disease",
+        "icd_code": "DX-2024-0004",
+        "category": "genetic",
+        "severity": "mild"
+      }
+    ],
+    "Treatment": [
+      {
+        "name": "Cardiac Catheterization",
+        "treatment_id": "TRT-2025-0000",
+        "treatment_type": "medication",
+        "status": "planned",
+        "start_date": "2025-09-12T17:45:00",
+        "end_date": "2026-07-28T13:15:00"
+      },
+      {
+        "name": "Physical Therapy Program",
+        "treatment_id": "TRT-2025-0001",
+        "treatment_type": "surgery",
+        "status": "in_progress",
+        "start_date": "2024-05-23T08:30:00",
+        "end_date": "2024-12-21T10:00:00"
+      },
+      {
+        "name": "Cognitive Behavioral Therapy",
+        "treatment_id": "TRT-2025-0002",
+        "treatment_type": "therapy",
+        "status": "completed",
+        "start_date": "2024-06-27T15:45:00",
+        "end_date": "2026-11-26T17:30:00"
+      },
+      {
+        "name": "Chemotherapy Cycle 1",
+        "treatment_id": "TRT-2024-0003",
+        "treatment_type": "procedure",
+        "status": "cancelled",
+        "start_date": "2026-09-29T14:45:00",
+        "end_date": "2024-11-12T17:45:00"
+      },
+      {
+        "name": "Joint Replacement Surgery",
+        "treatment_id": "TRT-2025-0004",
+        "treatment_type": "imaging",
+        "status": "planned",
+        "start_date": "2026-09-16T13:00:00",
+        "end_date": "2024-12-22T14:15:00"
+      }
+    ],
+    "Encounter": [
+      {
+        "name": "Annual Physical Exam",
+        "encounter_id": "ENC-2025-0000",
+        "encounter_type": "inpatient",
+        "date": "2024-11-11T15:00:00",
+        "chief_complaint": "Chest pain",
+        "disposition": "Discharged"
+      },
+      {
+        "name": "Emergency Room Visit",
+        "encounter_id": "ENC-2024-0001",
+        "encounter_type": "outpatient",
+        "date": "2026-05-06T09:45:00",
+        "chief_complaint": "Shortness of breath",
+        "disposition": "Admitted"
+      },
+      {
+        "name": "Follow-Up Appointment",
+        "encounter_id": "ENC-2026-0002",
+        "encounter_type": "emergency",
+        "date": "2024-08-22T17:45:00",
+        "chief_complaint": "Headache",
+        "disposition": "Transferred"
+      },
+      {
+        "name": "Surgical Consultation",
+        "encounter_id": "ENC-2024-0003",
+        "encounter_type": "telehealth",
+        "date": "2026-08-08T15:30:00",
+        "chief_complaint": "Abdominal pain",
+        "disposition": "Observation"
+      },
+      {
+        "name": "Lab Work Review",
+        "encounter_id": "ENC-2024-0004",
+        "encounter_type": "inpatient",
+        "date": "2026-07-03T17:00:00",
+        "chief_complaint": "Back pain",
+        "disposition": "Against Medical Advice"
+      }
+    ],
+    "Facility": [
+      {
+        "name": "Memorial General Hospital",
+        "facility_id": "FAC-2026-0000",
+        "facility_type": "hospital",
+        "bed_count": 64
+      },
+      {
+        "name": "Riverside Medical Center",
+        "facility_id": "FAC-2025-0001",
+        "facility_type": "clinic",
+        "bed_count": 95
+      },
+      {
+        "name": "St. Mary's Regional Hospital",
+        "facility_id": "FAC-2024-0002",
+        "facility_type": "urgent_care",
+        "bed_count": 47
+      },
+      {
+        "name": "University Health System",
+        "facility_id": "FAC-2024-0003",
+        "facility_type": "lab",
+        "bed_count": 8
+      },
+      {
+        "name": "Cedar Grove Clinic",
+        "facility_id": "FAC-2025-0004",
+        "facility_type": "pharmacy",
+        "bed_count": 70
+      }
+    ],
+    "Medication": [
+      {
+        "name": "Metformin 500mg",
+        "ndc_code": "MED-2026-0000",
+        "drug_class": "Biguanide",
+        "dosage_form": "Tablet",
+        "contraindications": "Renal impairment (GFR < 30 mL/min)"
+      },
+      {
+        "name": "Lisinopril 10mg",
+        "ndc_code": "MED-2024-0001",
+        "drug_class": "ACE Inhibitor",
+        "dosage_form": "Capsule",
+        "contraindications": "Hepatic dysfunction"
+      },
+      {
+        "name": "Atorvastatin 40mg",
+        "ndc_code": "MED-2025-0002",
+        "drug_class": "Statin",
+        "dosage_form": "Injectable",
+        "contraindications": "Pregnancy Category D"
+      },
+      {
+        "name": "Amoxicillin 250mg",
+        "ndc_code": "MED-2026-0003",
+        "drug_class": "Beta-Blocker",
+        "dosage_form": "Oral Solution",
+        "contraindications": "Known hypersensitivity"
+      },
+      {
+        "name": "Sertraline 50mg",
+        "ndc_code": "MED-2024-0004",
+        "drug_class": "SSRI",
+        "dosage_form": "Topical Cream",
+        "contraindications": "Active GI bleeding"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Organization",
+      "target_name": "Metropolitan General Hospital"
+    },
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Organization",
+      "target_name": "Valley Health Network"
+    },
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Nurse James Morrison",
+      "target_label": "Organization",
+      "target_name": "Pacific Medical Group"
+    },
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Nurse James Morrison",
+      "target_label": "Organization",
+      "target_name": "Valley Health Network"
+    },
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Dr. Maria Rodriguez",
+      "target_label": "Organization",
+      "target_name": "Valley Health Network"
+    },
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Dr. Maria Rodriguez",
+      "target_label": "Organization",
+      "target_name": "Community Care Alliance"
+    },
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Dr. David Park",
+      "target_label": "Organization",
+      "target_name": "Community Care Alliance"
+    },
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Nurse Elena Volkov",
+      "target_label": "Organization",
+      "target_name": "Pacific Medical Group"
+    },
+    {
+      "type": "WORKS_FOR",
+      "source_label": "Person",
+      "source_name": "Nurse Elena Volkov",
+      "target_label": "Organization",
+      "target_name": "Community Care Alliance"
+    },
+    {
+      "type": "LOCATED_AT",
+      "source_label": "Organization",
+      "source_name": "Metropolitan General Hospital",
+      "target_label": "Location",
+      "target_name": "Emergency Department"
+    },
+    {
+      "type": "LOCATED_AT",
+      "source_label": "Organization",
+      "source_name": "Metropolitan General Hospital",
+      "target_label": "Location",
+      "target_name": "East Wing ICU"
+    },
+    {
+      "type": "LOCATED_AT",
+      "source_label": "Organization",
+      "source_name": "Sunrise Medical Center",
+      "target_label": "Location",
+      "target_name": "East Wing ICU"
+    },
+    {
+      "type": "LOCATED_AT",
+      "source_label": "Organization",
+      "source_name": "Sunrise Medical Center",
+      "target_label": "Location",
+      "target_name": "Outpatient Clinic B"
+    },
+    {
+      "type": "LOCATED_AT",
+      "source_label": "Organization",
+      "source_name": "Valley Health Network",
+      "target_label": "Location",
+      "target_name": "Emergency Department"
+    },
+    {
+      "type": "LOCATED_AT",
+      "source_label": "Organization",
+      "source_name": "Pacific Medical Group",
+      "target_label": "Location",
+      "target_name": "Radiology Suite"
+    },
+    {
+      "type": "LOCATED_AT",
+      "source_label": "Organization",
+      "source_name": "Community Care Alliance",
+      "target_label": "Location",
+      "target_name": "East Wing ICU"
+    },
+    {
+      "type": "LOCATED_AT",
+      "source_label": "Organization",
+      "source_name": "Community Care Alliance",
+      "target_label": "Location",
+      "target_name": "Outpatient Clinic B"
+    },
+    {
+      "type": "PARTICIPATED_IN",
+      "source_label": "Person",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Event",
+      "target_name": "Morbidity & Mortality Conference"
+    },
+    {
+      "type": "PARTICIPATED_IN",
+      "source_label": "Person",
+      "source_name": "Nurse James Morrison",
+      "target_label": "Event",
+      "target_name": "Grand Rounds Lecture"
+    },
+    {
+      "type": "PARTICIPATED_IN",
+      "source_label": "Person",
+      "source_name": "Dr. Maria Rodriguez",
+      "target_label": "Event",
+      "target_name": "Infection Control Audit"
+    },
+    {
+      "type": "PARTICIPATED_IN",
+      "source_label": "Person",
+      "source_name": "Dr. David Park",
+      "target_label": "Event",
+      "target_name": "Morbidity & Mortality Conference"
+    },
+    {
+      "type": "PARTICIPATED_IN",
+      "source_label": "Person",
+      "source_name": "Dr. David Park",
+      "target_label": "Event",
+      "target_name": "Emergency Code Blue Drill"
+    },
+    {
+      "type": "PARTICIPATED_IN",
+      "source_label": "Person",
+      "source_name": "Nurse Elena Volkov",
+      "target_label": "Event",
+      "target_name": "Infection Control Audit"
+    },
+    {
+      "type": "PARTICIPATED_IN",
+      "source_label": "Person",
+      "source_name": "Nurse Elena Volkov",
+      "target_label": "Event",
+      "target_name": "Morbidity & Mortality Conference"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "James Morrison",
+      "target_label": "Diagnosis",
+      "target_name": "Chronic Obstructive Pulmonary Disease"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "James Morrison",
+      "target_label": "Diagnosis",
+      "target_name": "Type 2 Diabetes Mellitus"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "Maria Rodriguez",
+      "target_label": "Diagnosis",
+      "target_name": "Acute Myocardial Infarction"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "Carlos Gutierrez",
+      "target_label": "Diagnosis",
+      "target_name": "Essential Hypertension"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "Carlos Gutierrez",
+      "target_label": "Diagnosis",
+      "target_name": "Acute Myocardial Infarction"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "James Morrison",
+      "target_label": "Provider",
+      "target_name": "Dr. Yuki Tanaka"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "James Morrison",
+      "target_label": "Provider",
+      "target_name": "Dr. Elena Volkov"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "Maria Rodriguez",
+      "target_label": "Provider",
+      "target_name": "Dr. Rachel Okonkwo"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "Maria Rodriguez",
+      "target_label": "Provider",
+      "target_name": "Dr. Sarah Chen"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "David Park",
+      "target_label": "Provider",
+      "target_name": "Dr. Sarah Chen"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "David Park",
+      "target_label": "Provider",
+      "target_name": "Dr. Michael O'Brien"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "Aisha Patel",
+      "target_label": "Provider",
+      "target_name": "Dr. Rachel Okonkwo"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "Aisha Patel",
+      "target_label": "Provider",
+      "target_name": "Dr. Yuki Tanaka"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "Carlos Gutierrez",
+      "target_label": "Provider",
+      "target_name": "Dr. Rachel Okonkwo"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Medication",
+      "target_name": "Amoxicillin 250mg"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Medication",
+      "target_name": "Lisinopril 10mg"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Michael O'Brien",
+      "target_label": "Medication",
+      "target_name": "Atorvastatin 40mg"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Michael O'Brien",
+      "target_label": "Medication",
+      "target_name": "Sertraline 50mg"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Elena Volkov",
+      "target_label": "Medication",
+      "target_name": "Lisinopril 10mg"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Medication",
+      "target_name": "Sertraline 50mg"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Medication",
+      "target_name": "Atorvastatin 40mg"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Rachel Okonkwo",
+      "target_label": "Medication",
+      "target_name": "Atorvastatin 40mg"
+    },
+    {
+      "type": "REFERRED_TO",
+      "source_label": "Provider",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Provider",
+      "target_name": "Dr. Rachel Okonkwo"
+    },
+    {
+      "type": "REFERRED_TO",
+      "source_label": "Provider",
+      "source_name": "Dr. Michael O'Brien",
+      "target_label": "Provider",
+      "target_name": "Dr. Elena Volkov"
+    },
+    {
+      "type": "REFERRED_TO",
+      "source_label": "Provider",
+      "source_name": "Dr. Elena Volkov",
+      "target_label": "Provider",
+      "target_name": "Dr. Michael O'Brien"
+    },
+    {
+      "type": "REFERRED_TO",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Provider",
+      "target_name": "Dr. Elena Volkov"
+    },
+    {
+      "type": "REFERRED_TO",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Provider",
+      "target_name": "Dr. Rachel Okonkwo"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "James Morrison",
+      "target_label": "Encounter",
+      "target_name": "Emergency Room Visit"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "James Morrison",
+      "target_label": "Encounter",
+      "target_name": "Annual Physical Exam"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "Maria Rodriguez",
+      "target_label": "Encounter",
+      "target_name": "Annual Physical Exam"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "Maria Rodriguez",
+      "target_label": "Encounter",
+      "target_name": "Surgical Consultation"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "David Park",
+      "target_label": "Encounter",
+      "target_name": "Follow-Up Appointment"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "Aisha Patel",
+      "target_label": "Encounter",
+      "target_name": "Follow-Up Appointment"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "Carlos Gutierrez",
+      "target_label": "Encounter",
+      "target_name": "Follow-Up Appointment"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Encounter",
+      "target_name": "Follow-Up Appointment"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Encounter",
+      "target_name": "Surgical Consultation"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Michael O'Brien",
+      "target_label": "Encounter",
+      "target_name": "Follow-Up Appointment"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Elena Volkov",
+      "target_label": "Encounter",
+      "target_name": "Annual Physical Exam"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Elena Volkov",
+      "target_label": "Encounter",
+      "target_name": "Lab Work Review"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Encounter",
+      "target_name": "Annual Physical Exam"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Encounter",
+      "target_name": "Follow-Up Appointment"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Rachel Okonkwo",
+      "target_label": "Encounter",
+      "target_name": "Lab Work Review"
+    },
+    {
+      "type": "ATTENDED",
+      "source_label": "Provider",
+      "source_name": "Dr. Rachel Okonkwo",
+      "target_label": "Encounter",
+      "target_name": "Emergency Room Visit"
+    },
+    {
+      "type": "OCCURRED_AT",
+      "source_label": "Encounter",
+      "source_name": "Annual Physical Exam",
+      "target_label": "Facility",
+      "target_name": "Riverside Medical Center"
+    },
+    {
+      "type": "OCCURRED_AT",
+      "source_label": "Encounter",
+      "source_name": "Emergency Room Visit",
+      "target_label": "Facility",
+      "target_name": "Cedar Grove Clinic"
+    },
+    {
+      "type": "OCCURRED_AT",
+      "source_label": "Encounter",
+      "source_name": "Follow-Up Appointment",
+      "target_label": "Facility",
+      "target_name": "Cedar Grove Clinic"
+    },
+    {
+      "type": "OCCURRED_AT",
+      "source_label": "Encounter",
+      "source_name": "Surgical Consultation",
+      "target_label": "Facility",
+      "target_name": "University Health System"
+    },
+    {
+      "type": "OCCURRED_AT",
+      "source_label": "Encounter",
+      "source_name": "Lab Work Review",
+      "target_label": "Facility",
+      "target_name": "Cedar Grove Clinic"
+    },
+    {
+      "type": "OCCURRED_AT",
+      "source_label": "Encounter",
+      "source_name": "Lab Work Review",
+      "target_label": "Facility",
+      "target_name": "Riverside Medical Center"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Annual Physical Exam",
+      "target_label": "Diagnosis",
+      "target_name": "Major Depressive Disorder"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Annual Physical Exam",
+      "target_label": "Diagnosis",
+      "target_name": "Type 2 Diabetes Mellitus"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Emergency Room Visit",
+      "target_label": "Diagnosis",
+      "target_name": "Major Depressive Disorder"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Emergency Room Visit",
+      "target_label": "Diagnosis",
+      "target_name": "Chronic Obstructive Pulmonary Disease"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Follow-Up Appointment",
+      "target_label": "Diagnosis",
+      "target_name": "Major Depressive Disorder"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Follow-Up Appointment",
+      "target_label": "Diagnosis",
+      "target_name": "Chronic Obstructive Pulmonary Disease"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Surgical Consultation",
+      "target_label": "Diagnosis",
+      "target_name": "Acute Myocardial Infarction"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Lab Work Review",
+      "target_label": "Diagnosis",
+      "target_name": "Type 2 Diabetes Mellitus"
+    },
+    {
+      "type": "RESULTED_IN",
+      "source_label": "Encounter",
+      "source_name": "Lab Work Review",
+      "target_label": "Diagnosis",
+      "target_name": "Essential Hypertension"
+    },
+    {
+      "type": "INCLUDES",
+      "source_label": "Encounter",
+      "source_name": "Annual Physical Exam",
+      "target_label": "Treatment",
+      "target_name": "Joint Replacement Surgery"
+    },
+    {
+      "type": "INCLUDES",
+      "source_label": "Encounter",
+      "source_name": "Annual Physical Exam",
+      "target_label": "Treatment",
+      "target_name": "Chemotherapy Cycle 1"
+    },
+    {
+      "type": "INCLUDES",
+      "source_label": "Encounter",
+      "source_name": "Emergency Room Visit",
+      "target_label": "Treatment",
+      "target_name": "Physical Therapy Program"
+    },
+    {
+      "type": "INCLUDES",
+      "source_label": "Encounter",
+      "source_name": "Follow-Up Appointment",
+      "target_label": "Treatment",
+      "target_name": "Physical Therapy Program"
+    },
+    {
+      "type": "INCLUDES",
+      "source_label": "Encounter",
+      "source_name": "Surgical Consultation",
+      "target_label": "Treatment",
+      "target_name": "Physical Therapy Program"
+    },
+    {
+      "type": "INCLUDES",
+      "source_label": "Encounter",
+      "source_name": "Surgical Consultation",
+      "target_label": "Treatment",
+      "target_name": "Cardiac Catheterization"
+    },
+    {
+      "type": "INCLUDES",
+      "source_label": "Encounter",
+      "source_name": "Lab Work Review",
+      "target_label": "Treatment",
+      "target_name": "Physical Therapy Program"
+    },
+    {
+      "type": "INCLUDES",
+      "source_label": "Encounter",
+      "source_name": "Lab Work Review",
+      "target_label": "Treatment",
+      "target_name": "Chemotherapy Cycle 1"
+    },
+    {
+      "type": "TREATS",
+      "source_label": "Treatment",
+      "source_name": "Cardiac Catheterization",
+      "target_label": "Diagnosis",
+      "target_name": "Type 2 Diabetes Mellitus"
+    },
+    {
+      "type": "TREATS",
+      "source_label": "Treatment",
+      "source_name": "Physical Therapy Program",
+      "target_label": "Diagnosis",
+      "target_name": "Major Depressive Disorder"
+    },
+    {
+      "type": "TREATS",
+      "source_label": "Treatment",
+      "source_name": "Cognitive Behavioral Therapy",
+      "target_label": "Diagnosis",
+      "target_name": "Major Depressive Disorder"
+    },
+    {
+      "type": "TREATS",
+      "source_label": "Treatment",
+      "source_name": "Cognitive Behavioral Therapy",
+      "target_label": "Diagnosis",
+      "target_name": "Essential Hypertension"
+    },
+    {
+      "type": "TREATS",
+      "source_label": "Treatment",
+      "source_name": "Chemotherapy Cycle 1",
+      "target_label": "Diagnosis",
+      "target_name": "Acute Myocardial Infarction"
+    },
+    {
+      "type": "TREATS",
+      "source_label": "Treatment",
+      "source_name": "Joint Replacement Surgery",
+      "target_label": "Diagnosis",
+      "target_name": "Chronic Obstructive Pulmonary Disease"
+    },
+    {
+      "type": "TREATS",
+      "source_label": "Treatment",
+      "source_name": "Joint Replacement Surgery",
+      "target_label": "Diagnosis",
+      "target_name": "Essential Hypertension"
+    },
+    {
+      "type": "USES",
+      "source_label": "Treatment",
+      "source_name": "Cardiac Catheterization",
+      "target_label": "Medication",
+      "target_name": "Atorvastatin 40mg"
+    },
+    {
+      "type": "USES",
+      "source_label": "Treatment",
+      "source_name": "Cardiac Catheterization",
+      "target_label": "Medication",
+      "target_name": "Metformin 500mg"
+    },
+    {
+      "type": "USES",
+      "source_label": "Treatment",
+      "source_name": "Physical Therapy Program",
+      "target_label": "Medication",
+      "target_name": "Metformin 500mg"
+    },
+    {
+      "type": "USES",
+      "source_label": "Treatment",
+      "source_name": "Cognitive Behavioral Therapy",
+      "target_label": "Medication",
+      "target_name": "Atorvastatin 40mg"
+    },
+    {
+      "type": "USES",
+      "source_label": "Treatment",
+      "source_name": "Cognitive Behavioral Therapy",
+      "target_label": "Medication",
+      "target_name": "Lisinopril 10mg"
+    },
+    {
+      "type": "USES",
+      "source_label": "Treatment",
+      "source_name": "Chemotherapy Cycle 1",
+      "target_label": "Medication",
+      "target_name": "Lisinopril 10mg"
+    },
+    {
+      "type": "USES",
+      "source_label": "Treatment",
+      "source_name": "Joint Replacement Surgery",
+      "target_label": "Medication",
+      "target_name": "Amoxicillin 250mg"
+    },
+    {
+      "type": "CONTRAINDICATED_WITH",
+      "source_label": "Medication",
+      "source_name": "Lisinopril 10mg",
+      "target_label": "Medication",
+      "target_name": "Metformin 500mg"
+    },
+    {
+      "type": "CONTRAINDICATED_WITH",
+      "source_label": "Medication",
+      "source_name": "Atorvastatin 40mg",
+      "target_label": "Medication",
+      "target_name": "Sertraline 50mg"
+    },
+    {
+      "type": "CONTRAINDICATED_WITH",
+      "source_label": "Medication",
+      "source_name": "Atorvastatin 40mg",
+      "target_label": "Medication",
+      "target_name": "Metformin 500mg"
+    },
+    {
+      "type": "CONTRAINDICATED_WITH",
+      "source_label": "Medication",
+      "source_name": "Amoxicillin 250mg",
+      "target_label": "Medication",
+      "target_name": "Atorvastatin 40mg"
+    },
+    {
+      "type": "CONTRAINDICATED_WITH",
+      "source_label": "Medication",
+      "source_name": "Sertraline 50mg",
+      "target_label": "Medication",
+      "target_name": "Amoxicillin 250mg"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Facility",
+      "target_name": "St. Mary's Regional Hospital"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Michael O'Brien",
+      "target_label": "Facility",
+      "target_name": "Riverside Medical Center"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Michael O'Brien",
+      "target_label": "Facility",
+      "target_name": "St. Mary's Regional Hospital"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Elena Volkov",
+      "target_label": "Facility",
+      "target_name": "St. Mary's Regional Hospital"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Facility",
+      "target_name": "St. Mary's Regional Hospital"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Rachel Okonkwo",
+      "target_label": "Facility",
+      "target_name": "University Health System"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Rachel Okonkwo",
+      "target_label": "Facility",
+      "target_name": "St. Mary's Regional Hospital"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "James Morrison",
+      "target_label": "Diagnosis",
+      "target_name": "Essential Hypertension"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "Aisha Patel",
+      "target_label": "Diagnosis",
+      "target_name": "Major Depressive Disorder"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "Maria Rodriguez",
+      "target_label": "Diagnosis",
+      "target_name": "Essential Hypertension"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "David Park",
+      "target_label": "Diagnosis",
+      "target_name": "Essential Hypertension"
+    },
+    {
+      "type": "DIAGNOSED_WITH",
+      "source_label": "Patient",
+      "source_name": "David Park",
+      "target_label": "Diagnosis",
+      "target_name": "Chronic Obstructive Pulmonary Disease"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "Maria Rodriguez",
+      "target_label": "Provider",
+      "target_name": "Dr. Michael O'Brien"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "David Park",
+      "target_label": "Provider",
+      "target_name": "Dr. Elena Volkov"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "David Park",
+      "target_label": "Provider",
+      "target_name": "Dr. Yuki Tanaka"
+    },
+    {
+      "type": "TREATED_BY",
+      "source_label": "Patient",
+      "source_name": "Carlos Gutierrez",
+      "target_label": "Provider",
+      "target_name": "Dr. Sarah Chen"
+    },
+    {
+      "type": "REFERRED_TO",
+      "source_label": "Provider",
+      "source_name": "Dr. Michael O'Brien",
+      "target_label": "Provider",
+      "target_name": "Dr. Rachel Okonkwo"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Elena Volkov",
+      "target_label": "Medication",
+      "target_name": "Metformin 500mg"
+    },
+    {
+      "type": "PRESCRIBED",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Medication",
+      "target_name": "Metformin 500mg"
+    },
+    {
+      "type": "TREATS",
+      "source_label": "Treatment",
+      "source_name": "Cardiac Catheterization",
+      "target_label": "Diagnosis",
+      "target_name": "Acute Myocardial Infarction"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "Maria Rodriguez",
+      "target_label": "Encounter",
+      "target_name": "Emergency Room Visit"
+    },
+    {
+      "type": "HAD_ENCOUNTER",
+      "source_label": "Patient",
+      "source_name": "David Park",
+      "target_label": "Encounter",
+      "target_name": "Annual Physical Exam"
+    },
+    {
+      "type": "CONTRAINDICATED_WITH",
+      "source_label": "Medication",
+      "source_name": "Amoxicillin 250mg",
+      "target_label": "Medication",
+      "target_name": "Metformin 500mg"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Elena Volkov",
+      "target_label": "Facility",
+      "target_name": "Memorial General Hospital"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Yuki Tanaka",
+      "target_label": "Facility",
+      "target_name": "Memorial General Hospital"
+    },
+    {
+      "type": "AFFILIATED_WITH",
+      "source_label": "Provider",
+      "source_name": "Dr. Sarah Chen",
+      "target_label": "Facility",
+      "target_name": "Riverside Medical Center"
+    }
+  ],
+  "documents": [
+    {
+      "template_id": "discharge_summary",
+      "template_name": "Discharge Summary",
+      "title": "Discharge Summary: James Morrison",
+      "content": "# Discharge Summary\n\n**Date:** 2025-03-19  \n**Domain:** Healthcare  \n**Reference:** Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, Diagnosis: Type 2 Diabetes Mellitus, Treatment: Cardiac Catheterization\n\n## Summary\n\nThis discharge summary documents patient discharge summaries after hospital stays. It pertains to Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, Diagnosis: Type 2 Diabetes Mellitus, Treatment: Cardiac Catheterization and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, Diagnosis: Type 2 Diabetes Mellitus, Treatment: Cardiac Catheterization are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, Diagnosis: Type 2 Diabetes Mellitus, Treatment: Cardiac Catheterization, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior discharge summary records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "discharge_summary",
+      "template_name": "Discharge Summary",
+      "title": "Discharge Summary: Maria Rodriguez",
+      "content": "# Discharge Summary\n\n**Date:** 2024-11-08  \n**Domain:** Healthcare  \n**Reference:** Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, Diagnosis: Essential Hypertension, Treatment: Physical Therapy Program\n\n## Summary\n\nThis discharge summary documents patient discharge summaries after hospital stays. It pertains to Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, Diagnosis: Essential Hypertension, Treatment: Physical Therapy Program and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, Diagnosis: Essential Hypertension, Treatment: Physical Therapy Program are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, Diagnosis: Essential Hypertension, Treatment: Physical Therapy Program, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior discharge summary records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "discharge_summary",
+      "template_name": "Discharge Summary",
+      "title": "Discharge Summary: David Park",
+      "content": "# Discharge Summary\n\n**Date:** 2025-04-04  \n**Domain:** Healthcare  \n**Reference:** Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, Diagnosis: Acute Myocardial Infarction, Treatment: Cognitive Behavioral Therapy\n\n## Summary\n\nThis discharge summary documents patient discharge summaries after hospital stays. It pertains to Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, Diagnosis: Acute Myocardial Infarction, Treatment: Cognitive Behavioral Therapy and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, Diagnosis: Acute Myocardial Infarction, Treatment: Cognitive Behavioral Therapy are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, Diagnosis: Acute Myocardial Infarction, Treatment: Cognitive Behavioral Therapy, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior discharge summary records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "discharge_summary",
+      "template_name": "Discharge Summary",
+      "title": "Discharge Summary: Aisha Patel",
+      "content": "# Discharge Summary\n\n**Date:** 2025-12-13  \n**Domain:** Healthcare  \n**Reference:** Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, Diagnosis: Major Depressive Disorder, Treatment: Chemotherapy Cycle 1\n\n## Summary\n\nThis discharge summary documents patient discharge summaries after hospital stays. It pertains to Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, Diagnosis: Major Depressive Disorder, Treatment: Chemotherapy Cycle 1 and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, Diagnosis: Major Depressive Disorder, Treatment: Chemotherapy Cycle 1 are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, Diagnosis: Major Depressive Disorder, Treatment: Chemotherapy Cycle 1, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior discharge summary records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "discharge_summary",
+      "template_name": "Discharge Summary",
+      "title": "Discharge Summary: Carlos Gutierrez",
+      "content": "# Discharge Summary\n\n**Date:** 2026-01-11  \n**Domain:** Healthcare  \n**Reference:** Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, Diagnosis: Chronic Obstructive Pulmonary Disease, Treatment: Joint Replacement Surgery\n\n## Summary\n\nThis discharge summary documents patient discharge summaries after hospital stays. It pertains to Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, Diagnosis: Chronic Obstructive Pulmonary Disease, Treatment: Joint Replacement Surgery and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, Diagnosis: Chronic Obstructive Pulmonary Disease, Treatment: Joint Replacement Surgery are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, Diagnosis: Chronic Obstructive Pulmonary Disease, Treatment: Joint Replacement Surgery, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior discharge summary records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "referral_letter",
+      "template_name": "Referral Letter",
+      "title": "Referral Letter: Dr. Sarah Chen",
+      "content": "# Referral Letter\n\n**Date:** 2024-05-14  \n**Domain:** Healthcare  \n**Reference:** Provider: Dr. Sarah Chen, Patient: James Morrison, Diagnosis: Type 2 Diabetes Mellitus, Facility: Memorial General Hospital\n\n## Summary\n\nThis referral letter documents provider-to-provider referral communications. It pertains to Provider: Dr. Sarah Chen, Patient: James Morrison, Diagnosis: Type 2 Diabetes Mellitus, Facility: Memorial General Hospital and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Provider: Dr. Sarah Chen, Patient: James Morrison, Diagnosis: Type 2 Diabetes Mellitus, Facility: Memorial General Hospital are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Provider: Dr. Sarah Chen, Patient: James Morrison, Diagnosis: Type 2 Diabetes Mellitus, Facility: Memorial General Hospital, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior referral letter records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "referral_letter",
+      "template_name": "Referral Letter",
+      "title": "Referral Letter: Dr. Michael O'Brien",
+      "content": "# Referral Letter\n\n**Date:** 2026-03-29  \n**Domain:** Healthcare  \n**Reference:** Provider: Dr. Michael O'Brien, Patient: Maria Rodriguez, Diagnosis: Essential Hypertension, Facility: Riverside Medical Center\n\n## Summary\n\nThis referral letter documents provider-to-provider referral communications. It pertains to Provider: Dr. Michael O'Brien, Patient: Maria Rodriguez, Diagnosis: Essential Hypertension, Facility: Riverside Medical Center and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Provider: Dr. Michael O'Brien, Patient: Maria Rodriguez, Diagnosis: Essential Hypertension, Facility: Riverside Medical Center are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Provider: Dr. Michael O'Brien, Patient: Maria Rodriguez, Diagnosis: Essential Hypertension, Facility: Riverside Medical Center, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior referral letter records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "referral_letter",
+      "template_name": "Referral Letter",
+      "title": "Referral Letter: Dr. Elena Volkov",
+      "content": "# Referral Letter\n\n**Date:** 2025-03-07  \n**Domain:** Healthcare  \n**Reference:** Provider: Dr. Elena Volkov, Patient: David Park, Diagnosis: Acute Myocardial Infarction, Facility: St. Mary's Regional Hospital\n\n## Summary\n\nThis referral letter documents provider-to-provider referral communications. It pertains to Provider: Dr. Elena Volkov, Patient: David Park, Diagnosis: Acute Myocardial Infarction, Facility: St. Mary's Regional Hospital and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Provider: Dr. Elena Volkov, Patient: David Park, Diagnosis: Acute Myocardial Infarction, Facility: St. Mary's Regional Hospital are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Provider: Dr. Elena Volkov, Patient: David Park, Diagnosis: Acute Myocardial Infarction, Facility: St. Mary's Regional Hospital, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior referral letter records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "referral_letter",
+      "template_name": "Referral Letter",
+      "title": "Referral Letter: Dr. Yuki Tanaka",
+      "content": "# Referral Letter\n\n**Date:** 2026-10-17  \n**Domain:** Healthcare  \n**Reference:** Provider: Dr. Yuki Tanaka, Patient: Aisha Patel, Diagnosis: Major Depressive Disorder, Facility: University Health System\n\n## Summary\n\nThis referral letter documents provider-to-provider referral communications. It pertains to Provider: Dr. Yuki Tanaka, Patient: Aisha Patel, Diagnosis: Major Depressive Disorder, Facility: University Health System and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Provider: Dr. Yuki Tanaka, Patient: Aisha Patel, Diagnosis: Major Depressive Disorder, Facility: University Health System are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Provider: Dr. Yuki Tanaka, Patient: Aisha Patel, Diagnosis: Major Depressive Disorder, Facility: University Health System, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior referral letter records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "referral_letter",
+      "template_name": "Referral Letter",
+      "title": "Referral Letter: Dr. Rachel Okonkwo",
+      "content": "# Referral Letter\n\n**Date:** 2025-06-08  \n**Domain:** Healthcare  \n**Reference:** Provider: Dr. Rachel Okonkwo, Patient: Carlos Gutierrez, Diagnosis: Chronic Obstructive Pulmonary Disease, Facility: Cedar Grove Clinic\n\n## Summary\n\nThis referral letter documents provider-to-provider referral communications. It pertains to Provider: Dr. Rachel Okonkwo, Patient: Carlos Gutierrez, Diagnosis: Chronic Obstructive Pulmonary Disease, Facility: Cedar Grove Clinic and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Provider: Dr. Rachel Okonkwo, Patient: Carlos Gutierrez, Diagnosis: Chronic Obstructive Pulmonary Disease, Facility: Cedar Grove Clinic are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Provider: Dr. Rachel Okonkwo, Patient: Carlos Gutierrez, Diagnosis: Chronic Obstructive Pulmonary Disease, Facility: Cedar Grove Clinic, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior referral letter records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "lab_report",
+      "template_name": "Laboratory Report",
+      "title": "Laboratory Report: James Morrison",
+      "content": "# Laboratory Report\n\n**Date:** 2024-02-11  \n**Domain:** Healthcare  \n**Reference:** Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital\n\n## Summary\n\nThis laboratory report documents lab test results and interpretations. It pertains to Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior laboratory report records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "lab_report",
+      "template_name": "Laboratory Report",
+      "title": "Laboratory Report: Maria Rodriguez",
+      "content": "# Laboratory Report\n\n**Date:** 2026-12-16  \n**Domain:** Healthcare  \n**Reference:** Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center\n\n## Summary\n\nThis laboratory report documents lab test results and interpretations. It pertains to Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior laboratory report records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "lab_report",
+      "template_name": "Laboratory Report",
+      "title": "Laboratory Report: David Park",
+      "content": "# Laboratory Report\n\n**Date:** 2026-10-15  \n**Domain:** Healthcare  \n**Reference:** Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital\n\n## Summary\n\nThis laboratory report documents lab test results and interpretations. It pertains to Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior laboratory report records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "lab_report",
+      "template_name": "Laboratory Report",
+      "title": "Laboratory Report: Aisha Patel",
+      "content": "# Laboratory Report\n\n**Date:** 2025-03-23  \n**Domain:** Healthcare  \n**Reference:** Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System\n\n## Summary\n\nThis laboratory report documents lab test results and interpretations. It pertains to Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior laboratory report records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "lab_report",
+      "template_name": "Laboratory Report",
+      "title": "Laboratory Report: Carlos Gutierrez",
+      "content": "# Laboratory Report\n\n**Date:** 2026-09-24  \n**Domain:** Healthcare  \n**Reference:** Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic\n\n## Summary\n\nThis laboratory report documents lab test results and interpretations. It pertains to Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior laboratory report records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "progress_note",
+      "template_name": "Clinical Progress Note",
+      "title": "Clinical Progress Note: James Morrison",
+      "content": "# Clinical Progress Note\n\n**Date:** 2025-10-16  \n**Domain:** Healthcare  \n**Reference:** Patient: James Morrison, Provider: Dr. Sarah Chen, Encounter: Annual Physical Exam, Facility: Memorial General Hospital\n\n## Summary\n\nThis clinical progress note documents provider notes from patient encounters. It pertains to Patient: James Morrison, Provider: Dr. Sarah Chen, Encounter: Annual Physical Exam, Facility: Memorial General Hospital and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: James Morrison, Provider: Dr. Sarah Chen, Encounter: Annual Physical Exam, Facility: Memorial General Hospital are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: James Morrison, Provider: Dr. Sarah Chen, Encounter: Annual Physical Exam, Facility: Memorial General Hospital, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior clinical progress note records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "progress_note",
+      "template_name": "Clinical Progress Note",
+      "title": "Clinical Progress Note: Maria Rodriguez",
+      "content": "# Clinical Progress Note\n\n**Date:** 2024-03-07  \n**Domain:** Healthcare  \n**Reference:** Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Encounter: Emergency Room Visit, Facility: Riverside Medical Center\n\n## Summary\n\nThis clinical progress note documents provider notes from patient encounters. It pertains to Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Encounter: Emergency Room Visit, Facility: Riverside Medical Center and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Encounter: Emergency Room Visit, Facility: Riverside Medical Center are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Encounter: Emergency Room Visit, Facility: Riverside Medical Center, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior clinical progress note records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "progress_note",
+      "template_name": "Clinical Progress Note",
+      "title": "Clinical Progress Note: David Park",
+      "content": "# Clinical Progress Note\n\n**Date:** 2025-08-29  \n**Domain:** Healthcare  \n**Reference:** Patient: David Park, Provider: Dr. Elena Volkov, Encounter: Follow-Up Appointment, Facility: St. Mary's Regional Hospital\n\n## Summary\n\nThis clinical progress note documents provider notes from patient encounters. It pertains to Patient: David Park, Provider: Dr. Elena Volkov, Encounter: Follow-Up Appointment, Facility: St. Mary's Regional Hospital and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: David Park, Provider: Dr. Elena Volkov, Encounter: Follow-Up Appointment, Facility: St. Mary's Regional Hospital are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: David Park, Provider: Dr. Elena Volkov, Encounter: Follow-Up Appointment, Facility: St. Mary's Regional Hospital, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior clinical progress note records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "progress_note",
+      "template_name": "Clinical Progress Note",
+      "title": "Clinical Progress Note: Aisha Patel",
+      "content": "# Clinical Progress Note\n\n**Date:** 2024-09-21  \n**Domain:** Healthcare  \n**Reference:** Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Encounter: Surgical Consultation, Facility: University Health System\n\n## Summary\n\nThis clinical progress note documents provider notes from patient encounters. It pertains to Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Encounter: Surgical Consultation, Facility: University Health System and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Encounter: Surgical Consultation, Facility: University Health System are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Encounter: Surgical Consultation, Facility: University Health System, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior clinical progress note records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "progress_note",
+      "template_name": "Clinical Progress Note",
+      "title": "Clinical Progress Note: Carlos Gutierrez",
+      "content": "# Clinical Progress Note\n\n**Date:** 2025-04-20  \n**Domain:** Healthcare  \n**Reference:** Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Encounter: Lab Work Review, Facility: Cedar Grove Clinic\n\n## Summary\n\nThis clinical progress note documents provider notes from patient encounters. It pertains to Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Encounter: Lab Work Review, Facility: Cedar Grove Clinic and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Encounter: Lab Work Review, Facility: Cedar Grove Clinic are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Encounter: Lab Work Review, Facility: Cedar Grove Clinic, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior clinical progress note records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "meeting_notes",
+      "template_name": "Case Conference Notes",
+      "title": "Case Conference Notes: James Morrison",
+      "content": "# Case Conference Notes\n\n**Date:** 2026-04-17  \n**Domain:** Healthcare  \n**Reference:** Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, Diagnosis: Type 2 Diabetes Mellitus\n\n## Summary\n\nThis case conference notes documents multi-disciplinary team case discussions. It pertains to Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, Diagnosis: Type 2 Diabetes Mellitus and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, Diagnosis: Type 2 Diabetes Mellitus are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: James Morrison, Provider: Dr. Sarah Chen, Facility: Memorial General Hospital, Diagnosis: Type 2 Diabetes Mellitus, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior case conference notes records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "meeting_notes",
+      "template_name": "Case Conference Notes",
+      "title": "Case Conference Notes: Maria Rodriguez",
+      "content": "# Case Conference Notes\n\n**Date:** 2025-12-13  \n**Domain:** Healthcare  \n**Reference:** Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, Diagnosis: Essential Hypertension\n\n## Summary\n\nThis case conference notes documents multi-disciplinary team case discussions. It pertains to Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, Diagnosis: Essential Hypertension and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, Diagnosis: Essential Hypertension are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Maria Rodriguez, Provider: Dr. Michael O'Brien, Facility: Riverside Medical Center, Diagnosis: Essential Hypertension, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior case conference notes records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "meeting_notes",
+      "template_name": "Case Conference Notes",
+      "title": "Case Conference Notes: David Park",
+      "content": "# Case Conference Notes\n\n**Date:** 2024-01-08  \n**Domain:** Healthcare  \n**Reference:** Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, Diagnosis: Acute Myocardial Infarction\n\n## Summary\n\nThis case conference notes documents multi-disciplinary team case discussions. It pertains to Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, Diagnosis: Acute Myocardial Infarction and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, Diagnosis: Acute Myocardial Infarction are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: David Park, Provider: Dr. Elena Volkov, Facility: St. Mary's Regional Hospital, Diagnosis: Acute Myocardial Infarction, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior case conference notes records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "meeting_notes",
+      "template_name": "Case Conference Notes",
+      "title": "Case Conference Notes: Aisha Patel",
+      "content": "# Case Conference Notes\n\n**Date:** 2024-07-16  \n**Domain:** Healthcare  \n**Reference:** Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, Diagnosis: Major Depressive Disorder\n\n## Summary\n\nThis case conference notes documents multi-disciplinary team case discussions. It pertains to Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, Diagnosis: Major Depressive Disorder and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, Diagnosis: Major Depressive Disorder are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Aisha Patel, Provider: Dr. Yuki Tanaka, Facility: University Health System, Diagnosis: Major Depressive Disorder, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior case conference notes records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    },
+    {
+      "template_id": "meeting_notes",
+      "template_name": "Case Conference Notes",
+      "title": "Case Conference Notes: Carlos Gutierrez",
+      "content": "# Case Conference Notes\n\n**Date:** 2025-05-04  \n**Domain:** Healthcare  \n**Reference:** Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, Diagnosis: Chronic Obstructive Pulmonary Disease\n\n## Summary\n\nThis case conference notes documents multi-disciplinary team case discussions. It pertains to Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, Diagnosis: Chronic Obstructive Pulmonary Disease and was prepared as part of standard healthcare operations.\n\n## Details\n\nThe following information has been compiled based on available records and observations. All referenced entities have been verified against the current knowledge graph.\n\nKey findings and observations related to Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, Diagnosis: Chronic Obstructive Pulmonary Disease are documented below. This record should be reviewed in conjunction with related documents and entity records for complete context.\n\n## Recommendations\n\nBased on the analysis of Patient: Carlos Gutierrez, Provider: Dr. Rachel Okonkwo, Facility: Cedar Grove Clinic, Diagnosis: Chronic Obstructive Pulmonary Disease, the following actions are recommended for continued monitoring and follow-up. Please refer to the relevant entity profiles and prior case conference notes records for historical context and trend analysis.\n\n---\n\n*Document generated for Healthcare context graph application.*"
+    }
+  ],
+  "traces": [
+    {
+      "id": "treatment_selection",
+      "task": "Select appropriate treatment plan for James Morrison diagnosed with Major Depressive Disorder",
+      "steps": [
+        {
+          "thought": "Review patient history and current diagnoses",
+          "action": "Query patient entity graph including past encounters, diagnoses, and medications",
+          "observation": "Found 10 relevant records in the healthcare knowledge graph. Top result: Annual Physical Exam with 2 connected entities."
+        },
+        {
+          "thought": "Check for medication contraindications and allergies",
+          "action": "Cross-reference proposed medications with patient allergies and current prescriptions",
+          "observation": "Action completed for Pharmacy & Therapeutics Committee. Results consistent with expected healthcare domain patterns."
+        },
+        {
+          "thought": "Evaluate treatment options based on clinical evidence",
+          "action": "Find similar past cases and their treatment outcomes",
+          "observation": "Action completed for Riverside Medical Center. Results consistent with expected healthcare domain patterns."
+        },
+        {
+          "thought": "Consider patient preferences and facility capabilities",
+          "action": "Review available treatments at the patient's facility",
+          "observation": "Review of Outpatient Clinic B completed. Identified 4 key factors relevant to the current decision context."
+        }
+      ],
+      "outcome": "Treatment plan: the assessed criteria. Rationale: analysis of available data and alignment with operational guidelines"
+    },
+    {
+      "id": "referral_decision",
+      "task": "Determine if patient David Park should be referred to a specialist for Chronic Obstructive Pulmonary Disease",
+      "steps": [
+        {
+          "thought": "Assess the complexity and progression of the condition",
+          "action": "Query diagnosis history and treatment response",
+          "observation": "Found 8 relevant records in the healthcare knowledge graph. Top result: St. Mary's Regional Hospital with 3 connected entities."
+        },
+        {
+          "thought": "Identify appropriate specialists in the network",
+          "action": "Search providers by specialty and facility affiliation",
+          "observation": "Found 6 relevant records in the healthcare knowledge graph. Top result: St. Mary's Regional Hospital with 6 connected entities."
+        },
+        {
+          "thought": "Check specialist availability and patient coverage",
+          "action": "Query provider schedules and patient insurance compatibility",
+          "observation": "Found 10 relevant records in the healthcare knowledge graph. Top result: Dr. Michael O'Brien with 2 connected entities."
+        }
+      ],
+      "outcome": "Referral decision: Approve. Specialist: the assessed criteria"
+    },
+    {
+      "id": "readmission_risk",
+      "task": "Assess readmission risk for Aisha Patel being discharged after Chronic Obstructive Pulmonary Disease treatment",
+      "steps": [
+        {
+          "thought": "Review patient's hospitalization and readmission history",
+          "action": "Query past encounters and discharge outcomes",
+          "observation": "Found 7 relevant records in the healthcare knowledge graph. Top result: Lab Results Summary with 2 connected entities."
+        },
+        {
+          "thought": "Evaluate completeness of discharge plan",
+          "action": "Check for scheduled follow-ups, medication reconciliation, and support services",
+          "observation": "Verified Lab Results Summary against healthcare standards. All 4 checked parameters within acceptable thresholds."
+        },
+        {
+          "thought": "Identify risk factors from similar patients",
+          "action": "Find patients with similar diagnoses and demographics, check their readmission rates",
+          "observation": "Verified Medication Reconciliation Form against healthcare standards. All 8 checked parameters within acceptable thresholds."
+        }
+      ],
+      "outcome": "Risk level: moderate. Mitigation: the assessed criteria"
+    },
+    {
+      "id": "medication_reconciliation",
+      "task": "Reconcile medications for James Morrison transitioning between Riverside Medical Center and outpatient care",
+      "steps": [
+        {
+          "thought": "Compile complete list of current prescriptions and over-the-counter medications",
+          "action": "Query all active medications and treatments for the patient",
+          "observation": "Found 12 relevant records in the healthcare knowledge graph. Top result: St. Mary's Regional Hospital with 5 connected entities."
+        },
+        {
+          "thought": "Identify discrepancies between inpatient and outpatient medication lists",
+          "action": "Compare encounter-linked prescriptions with standing medication orders",
+          "observation": "Action completed for Aisha Patel. Results consistent with expected healthcare domain patterns."
+        },
+        {
+          "thought": "Check for duplicate therapies and contraindicated combinations",
+          "action": "Cross-reference medication pairs for CONTRAINDICATED_WITH relationships",
+          "observation": "Action completed for Medication Reconciliation Form. Results consistent with expected healthcare domain patterns."
+        },
+        {
+          "thought": "Verify dosage appropriateness given current diagnoses and patient factors",
+          "action": "Review patient allergies, blood type, and active diagnoses against medication profiles",
+          "observation": "Review of Dr. Rachel Okonkwo completed. Identified 5 key factors relevant to the current decision context."
+        }
+      ],
+      "outcome": "Reconciled medications: the assessed criteria. Discrepancies found: the assessed criteria. Actions: the assessed criteria"
+    },
+    {
+      "id": "triage_priority",
+      "task": "Determine triage priority for Aisha Patel presenting at Cedar Grove Clinic emergency department",
+      "steps": [
+        {
+          "thought": "Assess chief complaint severity and vital signs",
+          "action": "Query patient encounter history for chief complaint and recent encounters",
+          "observation": "Found 12 relevant records in the healthcare knowledge graph. Top result: Discharge Planning Checklist with 2 connected entities."
+        },
+        {
+          "thought": "Review patient history for conditions that elevate risk",
+          "action": "Check diagnosed conditions, especially chronic and critical severity diagnoses",
+          "observation": "Verified Lisinopril 10mg against healthcare standards. All 8 checked parameters within acceptable thresholds."
+        },
+        {
+          "thought": "Evaluate current facility capacity and provider availability",
+          "action": "Query facility bed count and active encounters at the facility",
+          "observation": "Found 11 relevant records in the healthcare knowledge graph. Top result: Grand Rounds Lecture with 2 connected entities."
+        },
+        {
+          "thought": "Assign triage level based on acuity and resource needs",
+          "action": "Compare patient profile with similar past emergency encounters and their dispositions",
+          "observation": "Action completed for Nurse Elena Volkov. Results consistent with expected healthcare domain patterns."
+        }
+      ],
+      "outcome": "Triage level: the assessed criteria. Rationale: analysis of available data and alignment with operational guidelines. Assigned provider: the assessed criteria"
+    },
+    {
+      "id": "discharge_planning",
+      "task": "Create discharge plan for Carlos Gutierrez after treatment for Type 2 Diabetes Mellitus at University Health System",
+      "steps": [
+        {
+          "thought": "Review treatment completion status and clinical outcomes",
+          "action": "Query all treatments linked to the current encounter and their statuses",
+          "observation": "Found 5 relevant records in the healthcare knowledge graph. Top result: Cardiac Catheterization with 6 connected entities."
+        },
+        {
+          "thought": "Identify follow-up care requirements and specialist referrals",
+          "action": "Check for pending referrals and recommended follow-up providers by specialty",
+          "observation": "Verified Major Depressive Disorder against healthcare standards. All 3 checked parameters within acceptable thresholds."
+        },
+        {
+          "thought": "Assess patient support needs and medication regimen",
+          "action": "Review prescribed medications, contraindications, and patient allergies",
+          "observation": "Review of Dr. David Park completed. Identified 4 key factors relevant to the current decision context."
+        },
+        {
+          "thought": "Coordinate with outpatient providers and schedule follow-ups",
+          "action": "Query affiliated providers and available facilities for post-discharge care",
+          "observation": "Found 12 relevant records in the healthcare knowledge graph. Top result: Metropolitan General Hospital with 4 connected entities."
+        }
+      ],
+      "outcome": "Discharge plan: the assessed criteria. Follow-up: the assessed criteria. Medications: the assessed criteria"
+    },
+    {
+      "id": "infection_control",
+      "task": "Evaluate infection control risk for Acute Myocardial Infarction cases at Memorial General Hospital",
+      "steps": [
+        {
+          "thought": "Identify all patients with the infectious diagnosis at the facility",
+          "action": "Query patients diagnosed with the condition who had encounters at the facility",
+          "observation": "Found 5 relevant records in the healthcare knowledge graph. Top result: Maria Rodriguez with 5 connected entities."
+        },
+        {
+          "thought": "Map provider and encounter overlaps for transmission risk",
+          "action": "Find providers who attended encounters with affected patients and their other patients",
+          "observation": "Action completed for Lab Work Review. Results consistent with expected healthcare domain patterns."
+        },
+        {
+          "thought": "Assess facility capacity for isolation and containment",
+          "action": "Check facility type, bed count, and current patient load",
+          "observation": "Verified Acute Myocardial Infarction against healthcare standards. All 6 checked parameters within acceptable thresholds."
+        }
+      ],
+      "outcome": "Risk level: moderate. Affected patients: the assessed criteria. Containment: the assessed criteria"
+    },
+    {
+      "id": "care_coordination",
+      "task": "Coordinate multi-provider care for James Morrison with comorbid conditions",
+      "steps": [
+        {
+          "thought": "Map all active diagnoses and their treating providers",
+          "action": "Query all DIAGNOSED_WITH and TREATED_BY relationships for the patient",
+          "observation": "Found 10 relevant records in the healthcare knowledge graph. Top result: Joint Replacement Surgery with 5 connected entities."
+        },
+        {
+          "thought": "Identify potential treatment conflicts across specialties",
+          "action": "Cross-reference treatments and medications from different providers for contraindications",
+          "observation": "Action completed for Pharmacy & Therapeutics Committee. Results consistent with expected healthcare domain patterns."
+        },
+        {
+          "thought": "Determine gaps in care coverage",
+          "action": "Check for diagnoses without active treatments or recent encounters",
+          "observation": "Verified Metropolitan General Hospital against healthcare standards. All 3 checked parameters within acceptable thresholds."
+        },
+        {
+          "thought": "Recommend care team alignment and communication plan",
+          "action": "Review provider referral network and facility affiliations for coordination",
+          "observation": "Review of Dr. Rachel Okonkwo completed. Identified 2 key factors relevant to the current decision context."
+        }
+      ],
+      "outcome": "Care team: the assessed criteria providers. Conflicts found: the assessed criteria. Gaps: the assessed criteria"
+    },
+    {
+      "id": "lab_result_interpretation",
+      "task": "Interpret lab results for Carlos Gutierrez ordered by Dr. Rachel Okonkwo related to Major Depressive Disorder",
+      "steps": [
+        {
+          "thought": "Review the lab test results in context of the patient's diagnoses",
+          "action": "Query lab_test treatments linked to the patient's encounters and diagnosis history",
+          "observation": "Found 6 relevant records in the healthcare knowledge graph. Top result: Dr. Elena Volkov with 5 connected entities."
+        },
+        {
+          "thought": "Compare results with patient's historical baseline values",
+          "action": "Find previous lab-type treatments and encounters for trend analysis",
+          "observation": "Action completed for Sertraline 50mg. Results consistent with expected healthcare domain patterns."
+        },
+        {
+          "thought": "Assess whether results indicate treatment adjustment",
+          "action": "Cross-reference current medications and treatments with lab findings",
+          "observation": "Action completed for Lisinopril 10mg. Results consistent with expected healthcare domain patterns."
+        }
+      ],
+      "outcome": "Interpretation: the assessed criteria. Trend: the assessed criteria. Recommended action: immediate follow-up recommended"
+    },
+    {
+      "id": "resource_allocation",
+      "task": "Optimize resource allocation for St. Mary's Regional Hospital during high patient volume",
+      "steps": [
+        {
+          "thought": "Assess current facility utilization and patient census",
+          "action": "Query active encounters at the facility and compare to bed count",
+          "observation": "Found 9 relevant records in the healthcare knowledge graph. Top result: Radiology Suite with 4 connected entities."
+        },
+        {
+          "thought": "Identify providers available across affiliated facilities",
+          "action": "Query providers affiliated with the facility and their current encounter load",
+          "observation": "Found 7 relevant records in the healthcare knowledge graph. Top result: Main Hospital Campus with 4 connected entities."
+        },
+        {
+          "thought": "Prioritize patient needs by diagnosis severity",
+          "action": "Rank current patients by diagnosis severity and treatment status",
+          "observation": "Action completed for Riverside Medical Center. Results consistent with expected healthcare domain patterns."
+        },
+        {
+          "thought": "Recommend patient transfers or provider reassignments",
+          "action": "Find nearby facilities with available capacity and matching specialties",
+          "observation": "Action completed for Dr. Elena Volkov. Results consistent with expected healthcare domain patterns."
+        }
+      ],
+      "outcome": "Utilization: the assessed criteria%. Actions: the assessed criteria. Transfers recommended: the assessed criteria"
+    }
+  ]
+}

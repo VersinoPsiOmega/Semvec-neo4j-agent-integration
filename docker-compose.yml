@@ -1,0 +1,69 @@
+# ABOUTME: Neo4j plus the demo image: one-off seed, interactive demo and test suite against containerised Neo4j.
+# ABOUTME: Settings and secrets come from .env; NEO4J_TEST_URI is pointed at the neo4j service.
+
+name: semvec-neo4j
+
+x-app: &app
+  build: .
+  image: semvec-neo4j-demo
+  env_file: .env
+  environment:
+    NEO4J_TEST_URI: bolt://neo4j:7687
+  extra_hosts:
+    # Lets OPENAI_BASE_URL reach an LLM endpoint on the Docker host via host.docker.internal.
+    - "host.docker.internal:host-gateway"
+  volumes:
+    - hf-cache:/home/app/.cache/huggingface
+  depends_on:
+    neo4j:
+      condition: service_healthy
+
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_TEST_PASSWORD:?set NEO4J_TEST_PASSWORD in .env}
+      # After login Neo4j Browser opens the demo queries as a guide, served by the guide service.
+      # Browser prefixes the command with ":" itself, so the value has none.
+      NEO4J_browser_post__connect__cmd: "play http://localhost:7477/semvec-demo.html"
+    ports:
+      # Standard ports, so a local Python run reaches it with NEO4J_TEST_URI=bolt://localhost:7687
+      # and Neo4j Browser's default connect URL is right. Loopback only: the demo database is not
+      # meant to be reachable from the network.
+      - "127.0.0.1:7474:7474"
+      - "127.0.0.1:7687:7687"
+    volumes:
+      - neo4j-data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p \"$${NEO4J_AUTH#neo4j/}\" 'RETURN 1' >/dev/null 2>&1 || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  guide:
+    # docs/demo_queries.md as a Neo4j Browser guide; starts together with neo4j.
+    build: .
+    image: semvec-neo4j-demo
+    command: ["python", "scripts/browser_guide.py", "--port", "7477"]
+    ports:
+      - "127.0.0.1:7477:7477"
+
+  seed:
+    <<: *app
+    command: ["python", "scripts/seed_test_data.py"]
+    profiles: ["tools"]
+
+  demo:
+    <<: *app
+    stdin_open: true
+    tty: true
+    profiles: ["tools"]
+
+  test:
+    <<: *app
+    command: ["python", "-m", "pytest", "-q"]
+    profiles: ["tools"]
+
+volumes:
+  neo4j-data:
+  hf-cache:

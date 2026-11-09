@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+.venv/
+
+# Test / Coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# UV
+uv.lock
+
+# Environment
+.env
+
+# Generated scaffolds from `uvx create-context-graph` (the demo reads the
+# bundled fixtures in healthcare-fixtures/ by default; both names below
+# refer to optional regenerated copies that should not be tracked).
+healthcare-test-data/
+pss-test-data/
+
+# Internal docs that aren't part of the published surface.
+# - docs/plans/  : architecture / refactor plans, in-flight notes
+# - docs/blog/   : draft blog posts (medium.com/neo4j etc.) — kept locally,
+#                  not exposed via the public repo
+docs/plans/
+docs/blog/
